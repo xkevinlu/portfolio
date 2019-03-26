@@ -75,7 +75,7 @@ const insights_time = [
     "../img/modernizing-hr/insight-icon-1.svg"
   ),
   new Insight(
-    "MICRO & MACRO MANAGERS",
+    "MICRO & SKIMMING MANAGERS",
     "The primary manager segments are those who lean into making sure every single detail is correct, and those who don't really have time to do administrative managerial tasks.",
     "../img/modernizing-hr/insight-icon-2.svg"
   ),
