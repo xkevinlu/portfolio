@@ -239,7 +239,7 @@ try {
 
 try {
   const posts_render = document.getElementById("posts-render");
-  for (let i=0; i<posts.length; i++) {
+  for (let i=5; i<posts.length; i++) {
     posts_render.innerHTML += posts[i].render();
   }
 }
