@@ -209,12 +209,12 @@ const Footer = {
       <div class="container">
         <div class="row">
           <div class="col">
-            kevinludesign@gmail.com
-            <a href="https://www.linkedin.com/in/kevinalu/">LinkedIn</a>
-            <a href="">Behance</a>
+            kevinludesign@gmail.com |
+            <a href="https://www.linkedin.com/in/kevinalu/">LinkedIn</a> |
+            <a href="https://www.behance.net/kevinalu">Behance</a>
           </div>
           <div class="col text-right">
-            Website and content by Kevin Lu
+            Website & content by Kevin Lu
           </div>
         </div>
       </div>
