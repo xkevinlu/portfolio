@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 class Portfolio_Item{
   constructor(title, description, image_url, target_url){
     this.title = title;
@@ -25,27 +27,27 @@ const portfolio_items = [
     "Modernizing HR Self Service",
     "Improving the flow of work for millions of employees",
     "img/logo-1.png",
-    "work/modernizing-hr.html",
+    "work/modernizing-hr.html"
   ),
   new Portfolio_Item(
     "New Hire Onboarding",
     "Engaging new employees with a human approach",
     "img/logo-2.png",
-    "work/new-hire-onboarding.html",
+    "work/new-hire-onboarding.html"
   ),
   new Portfolio_Item(
     "FuboTV",
     "Selling the Netflix of sports",
     "img/logo-3.png",
-    "work/fubotv.html",
+    "work/fubotv.html"
   ),
   new Portfolio_Item(
     "Tinder for Ballroom Dancers",
     "Concept exploration and discovery",
     "img/logo-4.png",
-    "work/dancr.html",
+    "work/dancr.html"
   ),
-]
+];
 
 
 class Insight {
@@ -99,40 +101,40 @@ const insights_time = [
     "Users are confused when completing a task requires switching between legacy and new systems.",
     "../img/modernizing-hr/insight-icon-6.svg"
   ),
-]
+];
 
 const insights_onb = [
   new Insight(
     "Operational Inefficiencies",
     "one in two HR practitioners felt their onboarding process was “somewhat structured” to “not-at-all” structured.",
-    "../img/modernizing-hr/insight-icon-1.svg",
+    "../img/modernizing-hr/insight-icon-1.svg"
   ),
   new Insight(
     "Get Comfortable",
     "New Hires are anxious their first day of work and want to feel like everythings okay.",
-    "../img/modernizing-hr/insight-icon-2.svg",
+    "../img/modernizing-hr/insight-icon-2.svg"
   ),
   new Insight(
     "Culture Bomb",
     "Practitioners and managers want to share their company culture and way of doing things with their new hires.",
-    "../img/modernizing-hr/insight-icon-3.svg",
+    "../img/modernizing-hr/insight-icon-3.svg"
   ),
   new Insight(
     "Spark a Connection",
     "Both new hires and managers want to build a relationship with each other and the company.",
-    "../img/modernizing-hr/insight-icon-4.svg",
+    "../img/modernizing-hr/insight-icon-4.svg"
   ),
   new Insight(
     "Compliance, Compliance, Compliance",
     "Managers and practitioners need to ensure that the new hires complete the required paperwork.",
-    "../img/modernizing-hr/insight-icon-5.svg",
+    "../img/modernizing-hr/insight-icon-5.svg"
   ),
   new Insight(
     "Time Sensitive Paperwork",
     "Some paperwork, such as Form I-9, must be completed in a set time frame or else new hires are not able to work.",
-    "../img/modernizing-hr/insight-icon-6.svg",
+    "../img/modernizing-hr/insight-icon-6.svg"
   ),
-]
+];
 
 class Post{
   constructor(name, description, date, image_url, link_url) {
@@ -164,44 +166,44 @@ const posts = [
     "Getting data off of a website",
     "March 12, 2019",
     "pixel-perfect-thumbnail.png",
-    "https://medium.com/@xkevinlu/evernote-guerilla-usability-testing-73decea897b6",
+    "https://medium.com/@xkevinlu/evernote-guerilla-usability-testing-73decea897b6"
   ),
   new Post(
     "Behavioral Economics for Cognitive UX Patterns",
     "What cognitive biases tell us about designing better products",
     "March 12, 2019",
     "cognitive-ux.png",
-    "https://medium.com/@xkevinlu/evernote-guerilla-usability-testing-73decea897b6",
+    "https://medium.com/@xkevinlu/evernote-guerilla-usability-testing-73decea897b6"
   ),
   new Post(
     "UX KPIs Framework for Scrum",
     "How to work better with your product teams through a common language",
     "March 12, 2019",
     "uxkpi.png",
-    "https://medium.com/@xkevinlu/evernote-guerilla-usability-testing-73decea897b6",
+    "https://medium.com/@xkevinlu/evernote-guerilla-usability-testing-73decea897b6"
   ),
   new Post(
     "Better Design Presentations",
     "Understanding what makes for a better presentation",
     "March 12, 2019",
     "design-presentations.png",
-    "https://medium.com/@xkevinlu/evernote-guerilla-usability-testing-73decea897b6",
+    "https://medium.com/@xkevinlu/evernote-guerilla-usability-testing-73decea897b6"
   ),
   new Post(
     "Making a Basic Web Scraper in Python",
     "Getting data off of a website",
     "March 12, 2019",
     "python.jpeg",
-    "https://medium.com/@xkevinlu/evernote-guerilla-usability-testing-73decea897b6",
+    "https://medium.com/@xkevinlu/evernote-guerilla-usability-testing-73decea897b6"
   ),
   new Post(
     "Evernote Feature Suggestion & Usability Testing",
     "Uncovering pain points in Evernote's Reminder feature",
     "May 22, 2016",
     "evernote.jpg",
-    "https://medium.com/@xkevinlu/evernote-guerilla-usability-testing-73decea897b6",
+    "https://medium.com/@xkevinlu/evernote-guerilla-usability-testing-73decea897b6"
   ),
-]
+];
 
 const Footer = {
   render: function() {
@@ -220,7 +222,8 @@ const Footer = {
       </div>
     `;
   }
-}
+};
+
 const footer = document.getElementById("footer");
 footer.innerHTML += Footer.render();
 
@@ -230,7 +233,7 @@ try {
     insights_hr_render_area.innerHTML += insights_time[i].render();
   }
 }
- catch {
+ catch (error) {
   console.log("not this page");
 }
 
@@ -240,7 +243,7 @@ try {
     posts_render.innerHTML += posts[i].render();
   }
 }
- catch {
+ catch (error) {
   console.log("not this page");
 }
 
@@ -250,6 +253,6 @@ try {
     portfolio_render_area.innerHTML += portfolio_items[i].render();
   }
   }
-catch {
+catch (error) {
   console.log("not this page");
 }
