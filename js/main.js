@@ -162,13 +162,6 @@ class Post{
 
 const posts = [
   new Post(
-    "Coding my first Web App Game with Vanilla JS",
-    "Getting data off of a website",
-    "March 12, 2019",
-    "pixel-perfect-thumbnail.png",
-    "https://medium.com/@xkevinlu/evernote-guerilla-usability-testing-73decea897b6"
-  ),
-  new Post(
     "Behavioral Economics for Cognitive UX Patterns",
     "What cognitive biases tell us about designing better products",
     "March 12, 2019",
@@ -195,6 +188,13 @@ const posts = [
     "March 12, 2019",
     "python.jpeg",
     "https://medium.com/@xkevinlu/evernote-guerilla-usability-testing-73decea897b6"
+  ),
+  new Post(
+    "Making of a Design Quiz Game",
+    "Designer coding his own side project",
+    "April 2, 2019",
+    "pixel-perfect-thumbnail.png",
+    "https://medium.com/@xkevinlu/making-of-a-design-quiz-game-4a8b43eb4f37"
   ),
   new Post(
     "Evernote Feature Suggestion & Usability Testing",
@@ -241,7 +241,7 @@ try {
 
 try {
   const posts_render = document.getElementById("posts-render");
-  for (let i=5; i<posts.length; i++) {
+  for (let i=4; i<posts.length; i++) {
     posts_render.innerHTML += posts[i].render();
   }
 }
