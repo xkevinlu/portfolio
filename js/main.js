@@ -210,13 +210,15 @@ const Footer = {
     return `
       <div class="container">
         <div class="row">
-          <div class="col">
+          <div class="col-md-6 col-12">
+            <p class="small text-sm-center text-md-left font-weight-light">
             kevinludesign@gmail.com |
             <a href="https://www.linkedin.com/in/kevinalu/">LinkedIn</a> |
             <a href="https://www.behance.net/kevinalu">Behance</a>
+            </p>
           </div>
-          <div class="col text-right">
-            Website & content by Kevin Lu
+          <div class="col-md-6 col-12">
+            <p class="small font-weight-light text-sm-center text-md-right">Website & content by Kevin Lu</p>
           </div>
         </div>
       </div>
