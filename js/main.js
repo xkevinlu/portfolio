@@ -183,11 +183,11 @@ const posts = [
     "https://medium.com/@xkevinlu/evernote-guerilla-usability-testing-73decea897b6"
   ),
   new Post(
-    "Making a Basic Web Scraper in Python",
-    "Getting data off of a website",
-    "March 12, 2019",
+    "Basic Web Scraper with Python Tutorial",
+    "Cleaning a dataset off a website",
+    "April 3, 2019",
     "python.jpeg",
-    "https://medium.com/@xkevinlu/evernote-guerilla-usability-testing-73decea897b6"
+    "https://medium.com/@xkevinlu/basic-web-scraping-with-python-tutorial-e715ee36f6c1"
   ),
   new Post(
     "Making of a Design Quiz Game",
@@ -241,7 +241,7 @@ try {
 
 try {
   const posts_render = document.getElementById("posts-render");
-  for (let i=4; i<posts.length; i++) {
+  for (let i=3; i<posts.length; i++) {
     posts_render.innerHTML += posts[i].render();
   }
 }
