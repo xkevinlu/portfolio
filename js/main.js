@@ -24,8 +24,8 @@ class Portfolio_Item{
 
 const portfolio_items = [
   new Portfolio_Item(
-    "Modernizing HR Self Service",
-    "Improving the flow of work for millions of employees",
+    "Rethinking HR Time",
+    "Improving the way millions of hourly workers get paid",
     "img/logo-1.png",
     "work/modernizing-hr.html"
   ),
