@@ -14,6 +14,9 @@
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Playfair+Display:400,400i,700');
 
+.unset {
+  all: unset;
+}
 #loader {
   position: absolute;
   left: 50%;
