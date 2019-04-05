@@ -80,6 +80,7 @@ p {
 h5 {
   font-weight:600!important;
   font-size:1em!important;
+  margin-top:25px!important;
 }
 body, p, h4, h5, h6, li {
   font-family: "Open Sans"!important;
@@ -89,8 +90,8 @@ img {
   margin:20px 0px;
 }
 
-h6.section-start {
-  margin-top:20px;
+h5.section-start. h6.section-start {
+  margin-top:30px;
   margin-bottom:0px;
   opacity:0.8;
 }

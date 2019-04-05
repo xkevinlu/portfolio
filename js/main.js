@@ -1,15 +1,24 @@
 /*jshint esversion: 6 */
 
+function hoverImg(x,hover_url) {
+  x.firstElementChild.firstElementChild.src = hover_url;
+}
+
+function normalImg(x,normal_url) {
+  x.firstElementChild.firstElementChild.src = normal_url;
+}
+
 class Portfolio_Item{
-  constructor(title, description, image_url, target_url){
+  constructor(title, description, target_url, image_url, image2_url){
     this.title = title;
     this.description = description;
-    this.image = image_url;
     this.link = target_url;
+    this.image = image_url;
+    this.hover = image2_url;
   }
   render() {
     return `
-      <div class="row portfolio-item align-items-center border mt-5 mb-5 text-center">
+      <div onmouseenter="hoverImg(this, '${this.hover}')" onmouseleave="normalImg(this, '${this.image}')" class="row portfolio-item align-items-center border mt-5 mb-5 text-center">
         <div class="col-12 col-md-4 pl-5 pr-5">
           <img class="img-fluid" src=${this.image}>
         </div>
@@ -20,32 +29,37 @@ class Portfolio_Item{
       </div>
     `;
   }
+
 }
 
 const portfolio_items = [
   new Portfolio_Item(
     "Rethinking HR Time",
     "Improving the way millions of hourly workers get paid",
+    "work/modernizing-hr.html",
     "img/logo-1.png",
-    "work/modernizing-hr.html"
+    "img/logo-1-hover.png"
   ),
   new Portfolio_Item(
     "New Hire Onboarding",
     "Engaging new employees with a human approach",
+    "work/new-hire-onboarding.html",
     "img/logo-2.png",
-    "work/new-hire-onboarding.html"
+    "img/logo-2-hover.png",
   ),
   new Portfolio_Item(
     "FuboTV",
     "Selling the Netflix of sports",
+    "work/fubotv.html",
     "img/logo-3.png",
-    "work/fubotv.html"
+    "img/logo-3-hover.png"
   ),
   new Portfolio_Item(
     "Tinder for Ballroom Dancers",
     "Concept exploration and discovery",
+    "work/dancr.html",
     "img/logo-4.png",
-    "work/dancr.html"
+    "img/logo-4-hover.png"
   ),
 ];
 
@@ -303,7 +317,7 @@ try {
   }
   }
 catch (error) {
-  console.log("not this page");
+  console.log("crap");
 }
 
 function onReady(callback) {
