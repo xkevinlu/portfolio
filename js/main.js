@@ -297,7 +297,7 @@ try {
   }
 }
  catch (error) {
-  console.log("not this page");
+  console.log("No Insights to render");
 }
 
 try {
@@ -307,7 +307,7 @@ try {
   }
 }
  catch (error) {
-  console.log("not this page");
+  console.log("No posts to render");
 }
 
 try {
@@ -317,7 +317,7 @@ try {
   }
   }
 catch (error) {
-  console.log("crap");
+  console.log("No Portfolio items to render");
 }
 
 function onReady(callback) {
