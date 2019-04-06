@@ -90,7 +90,7 @@ img {
   margin:20px 0px;
 }
 
-h5.section-start. h6.section-start {
+h6.section-start {
   margin-top:30px;
   margin-bottom:0px;
   opacity:0.8;
@@ -99,6 +99,7 @@ h5.section-start. h6.section-start {
 h1 {
   font-family: 'Playfair Display', serif!important;
   font-weight:700!important;
+  margin-bottom:0.5em!important;
 }
 
 .portfolio-item {

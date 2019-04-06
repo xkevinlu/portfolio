@@ -73,10 +73,10 @@ class Insight {
   render() {
     return `
     <div class="insight-container row">
-    <div class="insight-left bg-light col-3">
+    <div class="insight-left col-12 col-md-3">
     <img class="insight-icon" src="../modernizing-hr/${this.icon}">
     </div>
-    <div class="col-9">
+    <div class="col-12 col-md-9">
     <h5>${this.title}</h5>
     <p>${this.description}</p>
     </div>

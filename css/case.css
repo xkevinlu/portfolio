@@ -9,6 +9,7 @@
 .insight-left {
   display:flex;
   align-items:center;
+  min-height:125px;
 }
 
 .insight-icon {

@@ -155,261 +155,267 @@
           <div id="insights-hr">
           </div>
           <figcaption class="figure-caption text-center pb-5">Research done in collaboration with Aaron Miller</figcaption>
-
-          <h6>FRAMING THE PROBLEM</h6>
-          <h1 class="section-title">Do More than Clock & View Pay</h1>
-          <p>
-          In its current state, our product was essentially a clock in/out button and (successful) pay stub visualizer. Over 80% of our usage was for the Pay feature.
-        </p>
-        <figure class="figure text-center mx-auto d-block">
-          <img class="figure-img img-fluid" src="/img/modernizing-hr/pay-2016.png">
-          <figcaption class="figure-caption">ADP Mobile App with Pay and basic Time</figcaption>
-        </figure>
-        <p>
-          The reality was that employees and managers often had to manage a seperate legacy login to do more complex time workflows, such as requesting a leave of absence or approving a batch of timecards.
-        </p>
-        <figure class="figure text-center mx-auto d-block">
-        <img class="img-fluid" src="/img/modernizing-hr/legacy-etime.png">
-        <figcaption class="figure-caption">Requesting Leave via eTime, another ADP Time system</figcaption>
-      </figure>
-        <p>
-          Even though these users wanted to switch to the new experience, they were forced to continue working in the older systems to complete their tasks.
-        </p>
-        <p>
-          Naturally, the question became: How might we enable employees and managers to complete their tasks?
-        </p>
-        <figure class="figure">
-          <a class="image-popup-no-margins" href="/img/modernizing-hr/golden-pier-broken-ship-no-title.png">
-            <img class="figure-img img-fluid" src="/img/modernizing-hr/golden-pier-broken-ship-no-title.png">
-          </a>
-          <figcaption class="figure-caption text-center">The user adoption problem: our new experience was a "golden pier with broken ships"</figcaption>
-        </figure>
-        <p>Many fingers pointed to “feature parity” with legacy systems as a major need, and our PO had pressure to ship features ASAP. Chasing feature parity however wouldn't help us solve user problems any better than today's solution. I reframed the features my PO had planned as benefits for the user, and to think in terms of achieving outcomes. To quote Theodore Levitt, “People don’t want to buy a quarter-inch drill. They want a quarter-inch hole.”</p>
-        <table class="table table-striped">
-          <thead>
-            <tr>
-              <th scope="col">Feature</th>
-              <th scope="col">Job to be Done</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Team Timecards (Manager)</td>
-              <td>Manager wants to efficiently approve all their employee's timecards</td>
-
-            </tr>
-            <tr>
-              <td>Schedule & Shift Swap (Employee)</td>
-              <td>Shift employee wants to view and modify their work hours</td>
-
-            </tr>
-            <tr>
-              <td>Total Absence Management Integration (Employee)</td>
-              <td>Employee needs to take time off for family, illness, or child birth</td>
-            </tr>
-          </tbody>
-        </table>
-        <p>
-          Finally, we needed to identify the information architecture of how all these different time features would fit together.
-        </p>
-
-        <a class="image-popup-no-margins" href="/img/modernizing-hr/mind-map.png">
-          <img class="img-fluid" src="/img/modernizing-hr/mind-map.png">
-        </a>
+        </div>
       </div>
     </div>
-  </div>
+    <div class="container-fluid bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col col-md-8 offset-md-2">
+            <h6 class="section-start">FRAMING THE PROBLEM</h6>
+            <h1 class="section-title">Do More than Clock & View Pay</h1>
+            <p>
+              In its current state, our product was essentially a clock in/out button and (successful) pay stub visualizer. Over 80% of our usage was for the Pay feature.
+            </p>
+            <figure class="figure text-center mx-auto d-block">
+              <img class="figure-img img-fluid" src="/img/modernizing-hr/pay-2016.png">
+              <figcaption class="figure-caption">ADP Mobile App with Pay and basic Time</figcaption>
+            </figure>
+            <p>
+              The reality was that employees and managers often had to manage a seperate legacy login to do more complex time workflows, such as requesting a leave of absence or approving a batch of timecards.
+            </p>
+            <figure class="figure text-center mx-auto d-block">
+              <img class="img-fluid" src="/img/modernizing-hr/legacy-etime.png">
+              <figcaption class="figure-caption">Requesting Leave via eTime, another ADP Time system</figcaption>
+            </figure>
+            <p>
+              Even though these users wanted to switch to the new experience, they were forced to continue working in the older systems to complete their tasks.
+            </p>
+            <p>
+              Naturally, the question became: How might we enable employees and managers to complete their tasks?
+            </p>
+            <figure class="figure">
+              <a class="image-popup-no-margins" href="/img/modernizing-hr/golden-pier-broken-ship-no-title.png">
+                <img class="figure-img img-fluid" src="/img/modernizing-hr/golden-pier-broken-ship-no-title.png">
+              </a>
+              <figcaption class="figure-caption text-center">The user adoption problem: our new experience was a "golden pier with broken ships"</figcaption>
+            </figure>
+            <p>Many fingers pointed to “feature parity” with legacy systems as a major need, and our PO had pressure to ship features ASAP. Chasing feature parity however wouldn't help us solve user problems any better than today's solution. I reframed the features my PO had planned as benefits for the user, and to think in terms of achieving outcomes. To quote Theodore Levitt, “People don’t want to buy a quarter-inch drill. They want a quarter-inch hole.”</p>
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">Feature</th>
+                  <th scope="col">Job to be Done</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Team Timecards (Manager)</td>
+                  <td>Manager wants to efficiently approve all their employee's timecards</td>
+
+                </tr>
+                <tr>
+                  <td>Schedule & Shift Swap (Employee)</td>
+                  <td>Shift employee wants to view and modify their work hours</td>
+
+                </tr>
+                <tr>
+                  <td>Total Absence Management Integration (Employee)</td>
+                  <td>Employee needs to take time off for family, illness, or child birth</td>
+                </tr>
+              </tbody>
+            </table>
+            <p>
+              Finally, we needed to identify the information architecture of how all these different time features would fit together.
+            </p>
+
+            <a class="image-popup-no-margins" href="/img/modernizing-hr/mind-map.png">
+              <img class="img-fluid" src="/img/modernizing-hr/mind-map.png">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
-  <div class="container">
-    <div class="row">
-      <div class="col col-md-8 offset-md-2">
-        <h6 class="section-start">THE VISION</h6>
-        <h1 class="section-title">Plan, Enter, Review</h1>
-        <p>To achieve our overarching goal of accurate and efficient time entry, I identified three main phases of the time entry process:</p>
-        <ol>
-          <li>Plan - When am I supposed to work?</li>
-          <li>Enter - Record the time I worked</li>
-          <li>Review - Check and approve the time I entered</li>
-        </ol>
-        <p>As they say in economics, all models are wrong, but some are useful. This framework allowed us to organize features in the context of the user journey.</p>
-
-        <h6 class="section-start">PLAN</h6>
-        <h1 class="section-title">View and Modify Work Schedule</h1>
-        <p>I designed a new Employee Schedule and Shift Swap based on a calendar to take advantage of the desktop form factor, that allowed employees to quickly see the hours they are scheduled, any transfers they might have, time off requests pending, and shift swap requests. The mobile experience would default to a week list view.
-        <a class="image-popup-no-margins" href="/img/modernizing-hr/Shift-swap-desktop-pending.png">
-          <img class="img-fluid" src="/img/modernizing-hr/Shift-swap-desktop-pending.png">
-        </a>
-
-          <video class="img-fluid afterglow" data-skin="dark" width="1280" height="720" controls>
-          <source class="img-fluid" src="/img/modernizing-hr/interaction-high-fidelity.mov" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
+    <div class="container">
+      <div class="row">
+        <div class="col col-md-8 offset-md-2">
+          <h6 class="section-start">THE VISION</h6>
+          <h1 class="section-title">Plan, Enter, Review</h1>
+          <p>To achieve our overarching goal of accurate and efficient time entry, I identified three main phases of the time entry process:</p>
+          <ol>
+            <li>Plan - When am I supposed to work?</li>
+            <li>Enter - Record the time I worked</li>
+            <li>Review - Check and approve the time I entered</li>
+          </ol>
+          <p>As they say in economics, all models are wrong, but some are useful. This framework allowed us to organize features in the context of the user journey.</p>
 
           <h6 class="section-start">PLAN</h6>
-          <h1 class="section-title">Take Leave of Absence</h1>
-          <p> To eliminate the seam of having to request Leaves from another system, I worked closely with the PO and lead developer of the Leave team to design and coordinate a unified time off experience. Again we aimed to simplify the experience for a non-specialized user or practitioner, so we worked to eliminate system jargon and optimized flows for user journeys.
-          <img class="img-fluid" src="/img/modernizing-hr/leave-use-cases.png">
-
-          <table class="table table-striped">
-            <thead>
-              <tr>
-                <th scope="col">Industry Jargon</th>
-                <th scope="col">User Centered Language</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Continuous Duration</td>
-                <td>All at once</td>
-              </tr>
-              <tr>
-                <td>Intermittent Duration</td>
-                <td>Break it up</td>
-              </tr>
-              <tr>
-                <td>Precertified Intermittent Duration</td>
-                <td>Break it up, with estimated dates</td>
-              </tr>
-              <tr>
-                <td>Supplemental Frequency & Duration Deviation Cushion</td>
-                <td>Estimated absences</td>
-              </tr>
-              <tr>
-                <td>2 episodes per interval, 4 hours per episode</td>
-                <td>2 times / week, 4 hours each</td>
-              </tr>
-            </tbody>
-          </table>
-    <figcaption class="figure-caption text-center">User-centered language in collaboration with Aaron Miller & Chris Lammer</figcaption>
-
-          <a class="image-popup-no-margins" href="/img/modernizing-hr/Flow - Precertify Intermittent Leave.jpeg">
-            <img class="img-fluid" src="/img/modernizing-hr/Flow - Precertify Intermittent Leave.jpeg">
-          </a>
-          <a class="image-popup-no-margins" href="/img/modernizing-hr/Flow - Report Intermittent Time.jpeg">
-            <img class="img-fluid" src="/img/modernizing-hr/Flow - Report Intermittent Time.jpeg">
+          <h1 class="section-title">View and Modify Work Schedule</h1>
+          <p>I designed a new Employee Schedule and Shift Swap based on a calendar to take advantage of the desktop form factor, that allowed employees to quickly see the hours they are scheduled, any transfers they might have, time off requests pending, and shift swap requests. The mobile experience would default to a week list view.</p>
+          <a class="image-popup-no-margins" href="/img/modernizing-hr/Shift-swap-desktop-pending.png">
+            <img class="img-fluid" src="/img/modernizing-hr/Shift-swap-desktop-pending.png">
           </a>
 
-          <h6 class="section-start">ENTER</h6>
-          <h1 class="section-title">Efficient Time Entry</h1>
-          <p>When it came to improving the clock tile, we had two major approaches -- focusing on the users next action or giving information about their current status. In both approaches, the previously prominent "current time" has been given less attention, due to the presence of clocks on computers and phones.
+          <video class="img-fluid afterglow" data-skin="dark" width="1280" height="720" controls>
+            <source class="img-fluid" src="/img/modernizing-hr/interaction-high-fidelity.mov" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+
+            <h6 class="section-start">PLAN</h6>
+            <h1 class="section-title">Take Leave of Absence</h1>
+            <p> To eliminate the seam of having to request Leaves from another system, I worked closely with the PO and lead developer of the Leave team to design and coordinate a unified time off experience. Again we aimed to simplify the experience for a non-specialized user or practitioner, so we worked to eliminate system jargon and optimized flows for user journeys.</p>
+            <img class="img-fluid" src="/img/modernizing-hr/leave-use-cases.png">
+
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">Industry Jargon</th>
+                  <th scope="col">User Centered Language</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Continuous Duration</td>
+                  <td>All at once</td>
+                </tr>
+                <tr>
+                  <td>Intermittent Duration</td>
+                  <td>Break it up</td>
+                </tr>
+                <tr>
+                  <td>Precertified Intermittent Duration</td>
+                  <td>Break it up, with estimated dates</td>
+                </tr>
+                <tr>
+                  <td>Supplemental Frequency & Duration Deviation Cushion</td>
+                  <td>Estimated absences</td>
+                </tr>
+                <tr>
+                  <td>2 episodes per interval, 4 hours per episode</td>
+                  <td>2 times / week, 4 hours each</td>
+                </tr>
+              </tbody>
+            </table>
+            <figcaption class="figure-caption text-center">User-centered language in collaboration with Aaron Miller & Chris Lammer</figcaption>
+
+            <a class="image-popup-no-margins" href="/img/modernizing-hr/Flow - Precertify Intermittent Leave.jpeg">
+              <img class="img-fluid" src="/img/modernizing-hr/Flow - Precertify Intermittent Leave.jpeg">
+            </a>
+            <a class="image-popup-no-margins" href="/img/modernizing-hr/Flow - Report Intermittent Time.jpeg">
+              <img class="img-fluid" src="/img/modernizing-hr/Flow - Report Intermittent Time.jpeg">
+            </a>
+
+            <h6 class="section-start">ENTER</h6>
+            <h1 class="section-title">Efficient Time Entry</h1>
+            <p>When it came to improving the clock tile, we had two major approaches -- focusing on the users next action or giving information about their current status. In both approaches, the previously prominent "current time" has been given less attention, due to the presence of clocks on computers and phones.</p>
             <img id="clock-compare" class="img-fluid" src="/img/modernizing-hr/clock-tile-ab.001.jpeg">
             <figcaption class="pb-5 figure-caption text-center">Tile designs in collaboration with Serafin Vazquez & Shayne Bowman</figcaption>
-            <p>After many rounds of user testing, design A performed slightly better in terms of user comprehension.
+            <p>After many rounds of user testing, design A performed slightly better in terms of user comprehension.</p>
 
-          <h6 class="section-start">REVIEW</h6>
-          <h1 class="section-title">Team Timecard Approval</h1>
-          <p>The final step typically before an employee gets paid is for a manager to approve their employee's timecards to send to payroll. I designed a view for managers to quickly skim the hours, status, and breakdowns of their employees for a pay period, as well as performing bulk approvals for efficiency. For the more scrutinizng manager, they can also view the details of each timecard.
-          <a class="image-popup-no-margins" href="/img/modernizing-hr/team-timecards.png">
-            <img class="img-fluid" src="/img/modernizing-hr/team-timecards.png">
-          </a>
-          <figcaption class="pb-5 figure-caption text-center">Design in collaboration with Serafin Vazquez</figcaption>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="row">
-        <div class="col col-md-8 offset-md-2">
-          <h6 class="section-start">PROCESS</h6>
-          <h1 class="section-title">Communicating Design</h1>
-          <p>Working closely with the PM and Lead Dev of each team, I would sketch and whiteboard concepts/flows, then translate them into medium / hi-fidelity wireframes. We had a relatively mature design language with many components implemented in code, so it was relatively straightforward to assemble the visual elements.</p>
-          <p>For remote and federated teams, I leaned into using InVision Freehand for whiteboarding and collaboration during the brainstorming phases.</p>
-        </div>
-      </div>
-    </div>
-    <div class="container-fluid">
-      <div class="row no-gutters">
-        <div class="col-6">
-          <figure>
-            <a class="image-popup-no-margins" href="/img/modernizing-hr/whiteboarding-freehand.png">
-              <img class="img-fluid" src="/img/modernizing-hr/whiteboarding-freehand.png">
+            <h6 class="section-start">REVIEW</h6>
+            <h1 class="section-title">Team Timecard Approval</h1>
+            <p>The final step typically before an employee gets paid is for a manager to approve their employee's timecards to send to payroll. I designed a view for managers to quickly skim the hours, status, and breakdowns of their employees for a pay period, as well as performing bulk approvals for efficiency. For the more scrutinizng manager, they can also view the details of each timecard.</p>
+            <a class="image-popup-no-margins" href="/img/modernizing-hr/team-timecards.png">
+              <img class="img-fluid" src="/img/modernizing-hr/team-timecards.png">
             </a>
-            <figcaption class="figure-caption">Brainstorming and whiteboarding</figcaption>
-          </figure>
-        </div>
-        <div class="col-6">
-          <figure>
-            <a class="image-popup-no-margins" href="/img/modernizing-hr/process-ux-cognitive-laws-schedule.jpg">
-              <img class="img-fluid" src="/img/modernizing-hr/process-ux-cognitive-laws-schedule.jpg">
-            </a>
-            <figcaption class="figure-caption">Design review and critique</figcaption>
-          </figure>
-        </div>
-      </div>
-      <div class="row no-gutters">
-        <div class="col-6">
-          <figure>
-            <a class="image-popup-no-margins" href="/img/modernizing-hr/prototyping-keynote.png">
-              <img class="img-fluid" src="/img/modernizing-hr/prototyping-keynote.png">
-            </a>
-            <figcaption class="figure-caption">Vision video in Keynote</figcaption>
-          </figure>
-        </div>
-        <div class="col-6">
-          <figure>
-            <a class="image-popup-no-margins" href="/img/modernizing-hr/prototyping-principle.png">
-              <img class="img-fluid" src="/img/modernizing-hr/prototyping-principle.png">
-            </a>
-            <figcaption class="figure-caption">Prototyping in Principle</figcaption>
-          </figure>
-        </div>
-      </div>
-    </div>
+            <figcaption class="pb-5 figure-caption text-center">Design in collaboration with Serafin Vazquez</figcaption>
 
-    <div class="container">
-      <div class="row">
-        <div class="col col-md-8 offset-md-2">
-          <p>I often paired designed / programmed with an engineer throughout the development cycle. Thinking through code helped keep my designs grounded in systems thinking, and had a major influence on how I componentized different elements. It also made me think through the lens of cost benefit of building a certain interaction, such as the calendar popover positioning. </p>
-
-          <img class="img-fluid" src="/img/modernizing-hr/interaction-calendar-position.gif">
-
-          <p>For detailed animations / interactions, I would sometimes provide small code snippets for the developer as a reference.</p>
-
-          <p>I created vision videos and prototypes to help imagine what could be. This was the case when the UX team wanted to explore what could be possible with voice and chatbot technology.</p>
-          <iframe src="https://player.vimeo.com/video/253187379" width="100%" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="row">
-        <div class="col col-md-8 offset-md-2">
-          <h6 class="section-start">LAUNCH AND SUPPORT</h6>
-          <h1 class="section-title">Key Outcomes</h1>
-          <div class="text-center lead">
-            <p class="small font-italic font-weight-light">Confidential values have been omitted.</p>
-            <hr class="pt-3">
-            <p>Increased Existing Client Adoption by 5%</p>
-            <p>Reduced time on task for timecard approval by 30%</p>
-            <p>Several new clients implemented for net new revenue</p>
-            <p>Top 5 Business App in iOS App Store</p>
-            <p><a href="https://finance.yahoo.com/news/adp-mobile-app-surpasses-20-130000280.html">Achieved 20 million registered users</a></p>
-            <hr class="pb-3">
           </div>
-
-          <div class="text-center m-5">
-            <button onclick="location.href='new-hire-onboarding.html'" type="button" class="btn btn-dark">New Hire Onboarding <i class="fas fa-arrow-right"></i></button>
-          </div>
-
-
         </div>
       </div>
-    </div>
+      <div class='container-fluid bg-light'>
+        <div class="container">
+          <div class="row">
+            <div class="col col-md-8 offset-md-2">
+              <h6 class="section-start">PROCESS</h6>
+              <h1 class="section-title">Communicating Design</h1>
+              <p>Working closely with the PM and Lead Dev of each team, I would sketch and whiteboard concepts/flows, then translate them into medium / hi-fidelity wireframes. We had a relatively mature design language with many components implemented in code, so it was relatively straightforward to assemble the visual elements.</p>
+              <p>For remote and federated teams, I leaned into using InVision Freehand for whiteboarding and collaboration during the brainstorming phases.</p>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row no-gutters">
+            <div class="col-6">
+              <figure>
+                <a class="image-popup-no-margins" href="/img/modernizing-hr/whiteboarding-freehand.png">
+                  <img class="img-fluid" src="/img/modernizing-hr/whiteboarding-freehand.png">
+                </a>
+                <figcaption class="figure-caption">Brainstorming and whiteboarding</figcaption>
+              </figure>
+            </div>
+            <div class="col-6">
+              <figure>
+                <a class="image-popup-no-margins" href="/img/modernizing-hr/process-ux-cognitive-laws-schedule.jpg">
+                  <img class="img-fluid" src="/img/modernizing-hr/process-ux-cognitive-laws-schedule.jpg">
+                </a>
+                <figcaption class="figure-caption">Design review and critique</figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="row no-gutters">
+            <div class="col-6">
+              <figure>
+                <a class="image-popup-no-margins" href="/img/modernizing-hr/prototyping-keynote.png">
+                  <img class="img-fluid" src="/img/modernizing-hr/prototyping-keynote.png">
+                </a>
+                <figcaption class="figure-caption">Vision video in Keynote</figcaption>
+              </figure>
+            </div>
+            <div class="col-6">
+              <figure>
+                <a class="image-popup-no-margins" href="/img/modernizing-hr/prototyping-principle.png">
+                  <img class="img-fluid" src="/img/modernizing-hr/prototyping-principle.png">
+                </a>
+                <figcaption class="figure-caption">Prototyping in Principle</figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col col-md-8 offset-md-2">
+              <p>I often paired designed / programmed with an engineer throughout the development cycle. Thinking through code helped keep my designs grounded in systems thinking, and had a major influence on how I componentized different elements. It also made me think through the lens of cost benefit of building a certain interaction, such as the calendar popover positioning. </p>
 
-    <footer id="footer">
-    </footer>
-  </div> <!-- content load-->
+              <img class="img-fluid" src="/img/modernizing-hr/interaction-calendar-position.gif">
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="/js/main.js"></script>
-  <script src="/js/modernizing-hr.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  <script src="/js/magnifier.js"></script>
-  <script src="/js/afterglow.min.js"></script>
+              <p>For detailed animations / interactions, I would sometimes provide small code snippets for the developer as a reference.</p>
 
-</body>
+              <p>I created vision videos and prototypes to help imagine what could be. This was the case when the UX team wanted to explore what could be possible with voice and chatbot technology.</p>
+              <iframe src="https://player.vimeo.com/video/253187379" width="100%" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-</html>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col col-md-8 offset-md-2">
+            <h6 class="section-start">LAUNCH AND SUPPORT</h6>
+            <h1 class="section-title">Key Outcomes</h1>
+            <div class="text-center lead">
+              <p class="small font-italic font-weight-light">Confidential values have been omitted.</p>
+              <hr class="pt-3">
+              <p>Increased Existing Client Adoption by 5%</p>
+              <p>Reduced time on task for timecard approval by 30%</p>
+              <p>Several new clients implemented for net new revenue</p>
+              <p>Top 5 Business App in iOS App Store</p>
+              <p><a href="https://finance.yahoo.com/news/adp-mobile-app-surpasses-20-130000280.html">Achieved 20 million registered users</a></p>
+              <hr class="pb-3">
+            </div>
+
+            <div class="text-center m-5">
+              <button onclick="location.href='new-hire-onboarding.html'" type="button" class="btn btn-dark">New Hire Onboarding <i class="fas fa-arrow-right"></i></button>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+      <footer id="footer">
+      </footer>
+    </div> <!-- content load-->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/modernizing-hr.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="/js/magnifier.js"></script>
+    <script src="/js/afterglow.min.js"></script>
+
+  </body>
+
+  </html>
