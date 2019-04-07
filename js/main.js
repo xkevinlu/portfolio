@@ -74,7 +74,7 @@ class Insight {
     return `
     <div class="insight-container row">
     <div class="insight-left col-12 col-md-3">
-    <img class="insight-icon" src="../modernizing-hr/${this.icon}">
+    <img class="insight-icon" src="${this.icon}">
     </div>
     <div class="col-12 col-md-9">
     <h5>${this.title}</h5>
@@ -88,32 +88,32 @@ const insights_time = [
   new Insight(
     "TIMESTAMP & TIMECARD EMPLOYEES",
     "There are two major segments of hourly workers: those who clock in and out, and those who enter their hours on a timecard.",
-    "../img/modernizing-hr/insight-icon-1.svg"
+    "/img/modernizing-hr/insight-icon-1.svg"
   ),
   new Insight(
     "MICRO & MACRO MANAGERS",
     "The primary manager segments are those who lean into making sure every single detail is correct, and those who don't really have time to do administrative managerial tasks.",
-    "../img/modernizing-hr/insight-icon-2.svg"
+    "/img/modernizing-hr/insight-icon-2.svg"
   ),
   new Insight(
     "ONE SIZE DOES NOT FIT ALL",
     "An on-call nurse records time differently than a fitness instructor, expecting mother, or software engineer.",
-    "../img/modernizing-hr/insight-icon-3.svg"
+    "/img/modernizing-hr/insight-icon-3.svg"
   ),
   new Insight(
     "NO TIME FOR THIS",
     "Despite time entry being a high stakes activity, both employees and managers try to minimize time spent in HR systems.",
-    "../img/modernizing-hr/insight-icon-4.svg"
+    "/img/modernizing-hr/insight-icon-4.svg"
   ),
   new Insight(
     "MISTAKES ARE COSTLY",
     "Inaccurate time entries such as missed punches cause employees to be paid incorrectly and give managers more work to fix.",
-    "../img/modernizing-hr/insight-icon-5.svg"
+    "/img/modernizing-hr/insight-icon-5.svg"
   ),
   new Insight(
     "THE SEAMS ARE SHOWING",
     "Users are frustrated when completing a time task requires switching between legacy and new systems.",
-    "../img/modernizing-hr/insight-icon-6.svg"
+    "/img/modernizing-hr/insight-icon-6.svg"
   ),
 ];
 
@@ -121,32 +121,32 @@ const insights_onb = [
   new Insight(
     "Operational Inefficiencies",
     "one in two HR practitioners felt their onboarding process was “somewhat structured” to “not-at-all” structured.",
-    "../img/modernizing-hr/insight-icon-1.svg"
+    "/img/onboarding/insight-onb-1.svg"
   ),
   new Insight(
     "Get Comfortable",
     "New Hires are anxious their first day of work and want to feel like everythings okay.",
-    "../img/modernizing-hr/insight-icon-2.svg"
+    "/img/onboarding/insight-onb-2.svg"
   ),
   new Insight(
     "Culture Bomb",
     "Practitioners and managers want to share their company culture and way of doing things with their new hires.",
-    "../img/modernizing-hr/insight-icon-3.svg"
+    "/img/onboarding/insight-onb-3.svg"
   ),
   new Insight(
     "Spark a Connection",
     "Both new hires and managers want to build a relationship with each other and the company.",
-    "../img/modernizing-hr/insight-icon-4.svg"
+    "/img/onboarding/insight-onb-4.svg"
   ),
   new Insight(
     "Compliance, Compliance, Compliance",
     "Managers and practitioners need to ensure that the new hires complete the required paperwork.",
-    "../img/modernizing-hr/insight-icon-5.svg"
+    "/img/onboarding/insight-onb-5.svg"
   ),
   new Insight(
     "Time Sensitive Paperwork",
     "Some paperwork, such as Form I-9, must be completed in a set time frame or else new hires are not able to work.",
-    "../img/modernizing-hr/insight-icon-6.svg"
+    "/img/onboarding/insight-onb-6.svg"
   ),
 ];
 
@@ -270,14 +270,14 @@ const Footer = {
       <div class="container">
         <div class="row">
           <div class="col-md-6 col-12">
-            <p class="small text-sm-center text-md-left font-weight-light p-3">
+            <p class="small font-weight-light text-center text-md-left p-3">
             kevinludesign@gmail.com |
             <a href="https://www.linkedin.com/in/kevinalu/">LinkedIn</a> |
             <a href="https://www.behance.net/kevinalu">Behance</a>
             </p>
           </div>
           <div class="col-md-6 col-12">
-            <p class="small font-weight-light text-sm-center text-md-right p-3">Website & content by Kevin Lu</p>
+            <p class="small font-weight-light text-center text-md-right p-3">Website & content by Kevin Lu</p>
           </div>
         </div>
       </div>
@@ -297,7 +297,17 @@ try {
   }
 }
  catch (error) {
-  console.log("No Insights to render");
+  console.log("No Time Insights to render");
+}
+
+try {
+  const insights_onb_render_area = document.getElementById("insights-onb");
+  for (let i=0; i<insights_onb.length; i++) {
+    insights_onb_render_area.innerHTML += insights_onb[i].render();
+  }
+}
+ catch (error) {
+  console.log("No Onboarding Insights to render");
 }
 
 try {
